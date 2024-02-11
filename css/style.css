@@ -70,3 +70,120 @@
   font-weight: 900;
   src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+:root {
+  --primapy-light: #ffffff;
+  --primapy-yellow: #ff9f0e;
+  --primapy-dark: #181817;
+  --secondary-light: #fffaf3;
+  --secondary-yellow: #fcb62a;
+  --secondary-blue: #f1f3ff;
+  --secondary-green: #839aa9;
+  --secondary-pink: #f9f9ff;
+  --secondary-fiolet: #d9a6ff;
+}
+
+/* base */
+
+body {
+  color: var(--primapy-dark);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 133.333% */
+  letter-spacing: 0.9px;
+}
+
+ul {
+  list-style-type: none;
+}
+.button_form {
+  padding: 16px 32px;
+  border-radius: 8px;
+  color: var(--primapy-light);
+  background-color: var(--primapy-yellow);
+  cursor: pointer;
+  border: 0;
+}
+
+.button_form:active {
+  background-color: var(--secondary-yellow);
+}
+
+.link {
+  color: var(--primapy-dark);
+  text-decoration: none;
+  font-family: Roboto;
+  line-height: 1.5; /* 133.333% */
+  letter-spacing: 0.9px;
+}
+.link:hover {
+  color: var(--primapy-yellow);
+}
+.shadow1 {
+  box-shadow: 0px 4px 4px 0px rgba(24, 24, 23, 0.05);
+}
+.shadow2 {
+  box-shadow: 0px 8px 16px 0px rgba(24, 24, 23, 0.08);
+}
+.shadow3 {
+  box-shadow: 0px 0px 8px 0px rgba(24, 24, 23, 0.08);
+}
+
+/* header */
+.brand__logo {
+  text-decoration: none;
+}
+.brand__logo__text {
+  font-family: Rowdies;
+
+  color: var(--primapy-yellow);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.logo__part {
+  font-family: Rowdies;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* Hero section */
+
+.hero_title {
+  font-family: Rowdies;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+.hero__text {
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+/* Recommend__section */
+.recomend__title {
+  font-family: Rowdies;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.recomend__text {
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
