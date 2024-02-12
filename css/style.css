@@ -142,6 +142,8 @@ ul {
   background-color: var(--primapy-yellow);
   cursor: pointer;
   border: 0;
+  width: 150px;
+  height: 53px;
 }
 
 .button_form:active {
@@ -168,13 +170,22 @@ ul {
   box-shadow: 0px 0px 8px 0px rgba(24, 24, 23, 0.08);
 }
 
+.d210 {
+  height: 210px;
+}
+.d60 {
+  height: 60px;
+}
+
 /* header */
 .brand__logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .brand__logo__text {
   font-family: Rowdies;
-
+  margin: 10px 0 0 0;
   color: var(--primapy-yellow);
   font-size: 32px;
   font-style: normal;
@@ -190,9 +201,32 @@ ul {
   line-height: normal;
   text-transform: uppercase;
 }
+.nav__menu {
+  display: flex;
+}
+.nav__wrapper {
+  display: flex;
+}
+.header__nav-menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  column-gap: 48px;
+}
+.wrapper__button {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.icon-bag {
+  fill: var(--primapy-yellow);
+}
 
 /* Hero section */
 
+.d210 {
+  height: 210px;
+}
 .hero_title {
   font-family: Rowdies;
   font-size: 72px;
@@ -200,6 +234,7 @@ ul {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 3.6px;
+  max-width: 635px;
 }
 .hero__text {
   font-family: Roboto;
@@ -207,6 +242,11 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
+  max-width: 635px;
+}
+.hero__wrapper {
+  display: flex;
+  column-gap: 65px;
 }
 
 /* Recommend__section */
@@ -246,6 +286,24 @@ ul {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.recommend__wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.recomend__wrapper-image {
+  display: flex;
+  justify-content: left;
+}
+.recomend__video {
+  position: absolute;
+  right: 650px;
+  bottom: 500px;
+}
+.recomend__wrapper-text {
+  padding: 0 0 0 24px;
+  align-items: center;
 }
 
 /* customer__section */

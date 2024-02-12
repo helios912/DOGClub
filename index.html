@@ -10,15 +10,16 @@
     <header>
       <div class="container">
         <div class="nav__wrapper">
-          <nav>
+          <nav class="header__nav-menu">
             <a class="brand__logo" href="">
-              svg#icon-arrow
-
+              <svg  width="43" height="43">
+                <use href="./img/icons.svg#icon-logo"></use>
+              </svg>
               <h5 class="brand__logo__text">
                 dog<span class="logo__part">club</span>
               </h5>
             </a>
-            <ul>
+            <ul class="header__nav-menu">
               <li><a class="link" href="#less_talk">Less talk </a></li>
               <li>
                 <a class="link" href="#services_category">Services category </a>
@@ -26,8 +27,12 @@
               <li><a class="link" href="#happy_customer">Happy customer</a></li>
               <li><a class="link" href="#contact">Contact</a></li>
             </ul>
-            <a href=""></a>
-            <button class="button_form" type="button">Contact us</button>
+            <div class="wrapper__button"><a href=""><svg class="icon-bag" width="40" height="41">
+              <use href="./img/icons.svg#icon-bag"></use>
+            </svg>
+          </a>
+            <button class="button_form" type="button">Contact us</button></div>
+            
           </nav>
         </div>
       </div>
@@ -35,19 +40,47 @@
     <main>
       <section class="hero__section">
         <div class="container">
+          <div class="d210"></div>
           <div class="hero__wrapper">
-            <h1 class="hero_title">Taking care for your Smart Dog!</h1>
+            <div class="hero__wrapper-text">
+              <h1 class="hero_title">Taking care for your Smart Dog!</h1>
             <p class="hero__text">
               Human–canine bonding is the relationship between dogs and humans
             </p>
             <button class="button_form" type="button">Explore More</button>
-          </div>
+            </div>
+            <div class="hero_wrapper-image">
+              <img
+                      class="format-card__image"
+                      src="./img/hero main.png"
+                      alt="Dog see around"
+                    />
+            </div>
+             </div>       
+             <div class="d60"></div>       
         </div>
       </section>
       <section id="less_talk" class="recommend__section">
         <div class="container">
           <div class="recommend__wrapper">
-            <h2 class="recomend__title">Less talk and more walk</h2>
+            <div class="recomend__wrapper-image">
+
+              <a href="">
+                <img
+                      class="recomend__video"
+                      src="./img/video.svg"
+                      alt="video"
+                    />
+              </a>
+              <img
+                      class="recomend__image"
+                      src="./img/recomend video.png"
+                      alt="Dog see"
+                    />
+            </div>
+            <div class="recomend__wrapper-text">
+<div class="text__recom_wrapper">
+ <h2 class="recomend__title">Less talk and more walk</h2>
             <p class="recomend__text">
               Sometimes our career, lifestyle, or routines can make it difficult
               to provide your pet with the recommended amount of exercise that
@@ -55,6 +88,11 @@
               dogs so they are in perfect shape, mentally and physically.
             </p>
             <button class="button_form" type="button">Explore More</button>
+
+</div>
+              
+            </div>
+           
           </div>
         </div>
       </section>
@@ -126,14 +164,16 @@
       <div class="container">
         <div class="footer__wrapper">
           <nav>
-            <a class="brand__logo" href="">
-              svg#icon-arrow
+            <a class="brand__logo" href="/">
+              <svg class="footer__socials-icon" width="43" height="43">
+                <use href="./img/icons.svg#icon-logo"></use>
+              </svg>
 
               <h5 class="brand__logo__text">
                 dog<span class="logo__part">club</span>
               </h5>
             </a>
-            <ul>
+            <ul >
               <li><a class="link" href="#less_talk">Less talk </a></li>
               <li>
                 <a class="link" href="#services_category">Services category </a>
@@ -144,6 +184,7 @@
             <a href=""></a>
            
           </nav>
+                    
           <form action=""></form>
         </div>
       </div>
