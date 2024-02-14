@@ -93,6 +93,14 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  /* щоб правилтно наслідувались властивості від батьків */
+}
+
+a {
+  color: inherit;
+  /* щоб наслідувався колір зсилок від батьків*/
+  text-decoration: none;
+  /* підкреслення */
 }
 
 h1,
@@ -399,6 +407,33 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.customer__slider {
+  display: flex;
+  column-gap: 16px;
+}
+.slider__card {
+  width: 344px;
+  height: 456px;
+  /* background-color: var(--secondary-green); */
+  position: relative;
+  align-items: flex-end;
+  flex-basis: ;
+}
+.slider__image {
+  position: absolute;
+  z-index: -1;
+  border-radius: 24px;
+}
+.slider-text {
+  background-color: var(--secondary-green);
+  text-align: center;
+  color: var(--primapy-light);
+  height: 130px;
+  border-radius: 0 0 24px 24px;
+}
+.d500 {
+  height: 326px;
 }
 
 /* Contact__section */
