@@ -232,6 +232,70 @@ ul {
 }
 
 /* Hero section */
+.hero__wrapper {
+  position: relative;
+  padding-top: 219px;
+}
+.hero__fon {
+  position: absolute;
+  bottom: 100px;
+  top: 0;
+  right: -100px;
+  max-height: 808px;
+  max-width: 100vw;
+
+  left: -10px;
+  z-index: -1;
+}
+
+.hero__fon2 {
+  position: absolute;
+  right: -57px;
+  bottom: 291px;
+}
+
+.hero__fon3 {
+  position: absolute;
+  bottom: 72px;
+  right: 586px;
+}
+
+.hero__fon4 {
+  position: absolute;
+  bottom: 265px;
+  right: 599px;
+  border-radius: 50px;
+}
+
+.hero__fon5 {
+  position: absolute;
+  bottom: 640px;
+  right: -115px;
+}
+
+.hero__fon6 {
+  position: absolute;
+  bottom: 664px;
+  right: 340px;
+}
+
+.hero__fon7 {
+  position: absolute;
+  bottom: -45px;
+  right: 882px;
+}
+.hero__fon8 {
+  position: absolute;
+  bottom: 526px;
+  right: 698px;
+}
+
+.hero__fon1 {
+  position: absolute;
+  border-radius: 50px;
+  bottom: 511px;
+  right: 359px;
+}
 
 .d210 {
   height: 210px;
@@ -251,7 +315,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
-  max-width: 635px;
+  max-width: 499px;
 }
 .hero__wrapper {
   display: flex;
@@ -354,7 +418,7 @@ ul {
   justify-content: space-between;
   padding: 55px 71px 47px 71px;
   border-radius: 16px;
-  background-color: var(--primapy-light);
+  background-color: linear-gradient(180deg, #fff 0%, #fffbf4 100%);
 }
 .services__wrapper {
   align-items: center;
