@@ -580,15 +580,109 @@ ul {
   color: var(--secondary-green);
   text-align: center;
   padding-top: 16px;
+  padding-bottom: 42px;
 }
 .contact__section {
   padding-top: 168px;
+  position: relative;
 }
-.form__wrapper {
-  max-width: 600px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.contact__fon {
+  width: 100vw;
+  position: absolute;
+  z-index: -2;
+  height: 833px;
+  top: -100px;
+}
+.contact__wrapper {
+  position: relative;
+
+  .form__wrapper {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    margin-bottom: 72px;
+  }
+}
+.dog-img-left {
+  position: absolute;
+  left: -100px;
+  bottom: 10px;
+  max-height: 520px;
+  max-width: 488px;
+}
+.dog-img-right {
+  position: absolute;
+  max-height: 752px;
+  max-width: 322px;
+  left: 1000px;
+  top: -120px;
+}
+.lapa-cont {
+  position: absolute;
+  right: 943px;
+  top: -59px;
+}
+.nawui-cont {
+  position: absolute;
+  left: -180px;
+  bottom: 480px;
+}
+.bon-cont {
+  position: absolute;
+  right: 639px;
+  top: -65px;
+}
+.lapa2-cont {
+  position: absolute;
+  top: -192px;
+  right: 60px;
+  transform: rotate(77deg);
+}
+.bon2-cont {
+  position: absolute;
+  right: -121px;
+  top: -38px;
+  z-index: -2;
+}
+
+/* Footer */
+.footer__section {
+  margin-top: 20px;
+  padding-top: 32px;
+  padding-bottom: 31px;
+  margin-bottom: 50px;
+  background-color: #fffaf3;
+}
+
+.footer__wrapper {
+  height: 200px;
+  position: relative;
+}
+.footer__social-wrap {
+  display: flex;
+
+  gap: 0 8px;
+}
+.footer__logo-group {
+  display: flex;
+  row-gap: 24px;
+  flex-direction: column;
+}
+.footer__flex-wrapper {
+  display: flex;
+  gap: 0 136px;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.footer__img {
+  position: absolute;
+  right: -33px;
+  top: -29px;
 }
 
 /* MODALNE vikno */
@@ -642,6 +736,8 @@ ul {
 .wrapper__form {
   padding: 140px;
 }
+/* Form */
+
 .form__title {
   text-align: center;
   font-family: Rowdies;
@@ -718,4 +814,90 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Form footer */
+
+.footer__input-wrapper {
+  margin-bottom: 16px;
+  position: relative;
+}
+.footer__form-label {
+  position: absolute;
+  color: var(--primapy-yellow);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; /* 133.333% */
+  letter-spacing: 0.9px;
+  left: 56px;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  padding-left: 24px;
+  transform: translate();
+  transition: transform 0.3;
+}
+.footer__form-label:hover {
+  color: var(--primapy-dark);
+}
+.footer__form-icon {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 24px;
+  top: 8px;
+}
+.footer__form-input {
+  padding: 12.5px 35px 12.5px 80px;
+  width: 100%;
+  background-color: transparent;
+  color: var(--primapy-yellow);
+  border: 1px solid var(--primapy-yellow);
+  border-radius: 8px;
+}
+.footer__form-input:focus {
+  border-color: var(--secondary-yellow);
+  /* po zamovchyvanni treba zniatu */
+  outline: none;
+}
+.footer__button_form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttton {
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: var(--primapy-light);
+  background-color: var(--primapy-yellow);
+  cursor: pointer;
+  border: 0;
+  width: 126px;
+  height: 35px;
+}
+.footer__input-wrapper:focus-within .footer__form-label {
+  opacity: 0;
+}
+.footer__form-label2 {
+  position: absolute;
+  color: var(--primapy-yellow);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; /* 133.333% */
+  letter-spacing: 0.9px;
+  left: 24px;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  padding-left: 24px;
+  transform: translate();
+  transition: transform 0.3;
+}
+.footer__form-label2:hover {
+  color: var(--primapy-dark);
+}
+.footer__input-wrapper:focus-within .footer__form-label2 {
+  opacity: 0;
 }
