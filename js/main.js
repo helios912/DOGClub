@@ -1,25 +1,14 @@
-const menuBTN = document.querySelector('.menu-btn');
-const menuMobile = document.querySelector('.menu-mobile');
-
-menuBTN.addEventListener('click', () => {
-  menuMobile.classList.toggle('menu--open');
-});
-
 const swiper = new Swiper('.swiper', {
-  loop: true,
+  // Optional parameters
 
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 16,
+  // If we need pagination
+
+  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-right',
-    prevEl: '.swiper-button-left',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-  breackpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 16,
-    },
-  },
-  // And if we need scrollbar
 });
